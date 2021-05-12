@@ -10,7 +10,7 @@ from page.login_page import LoginPage
 class TestLogin:
     """淘宝登录"""
 
-    def test_PasswordLogin(self, browser, base_url, username = "1870057065@qq.com", password = "1303127066zxl**"):
+    def test_PasswordLogin(self, browser, base_url, username = "", password = ""):
         """
         名称："淘宝密码登录"
         步骤：
@@ -30,7 +30,7 @@ class TestLogin:
         sleep(2)
         assert "login.taobao" not in browser.current_url
 
-    def test_MessageLogin(self, browser, base_url, number = "13578909291"):
+    def test_MessageLogin(self, browser, base_url, number = ""):
         """
         名称："淘宝短信登录"
         步骤：
